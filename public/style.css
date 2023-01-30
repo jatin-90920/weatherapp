@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-bg: #34495e;
+    --main-color: #3498db;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+/* main menu design */
+.main_menu{
+    background-color: var(--main-bg);
+}
+.navbar{
+    background-color: var(--main-bg);
+}
+.navbar a{
+    color: #fff;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.navbar-toggler{
+    background-color: #fff;
+}
+.fa-snowflake{
+    transition: 1s linear all;
+    animation: rot 1s infinite alternate;
+}
+@keyframes rot{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* main header design */
+.main_header{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.main_header p{
+    font-size: 1.5rem;
+    margin: 5px 0px;
+}
+.main_header h1{
+    font-size: 2.5rem;
+    margin: 5px 0px;
+}
+.check-btn{
+    padding: 5px 20px;
+    border: 0px;
+    margin: 5px 0px;
+    outline: none;
+    box-shadow: 5px 5px 6px black;
+}
+.check-btn:hover{
+    cursor: pointer;
+    /* background-color: var(--main-bg); */
+    /* color: #fff; */
+    box-shadow: 5px 5px 6px var(--main-color);
+}
+.specific-color{
+    color: var(--main-color);
+}
+/* about page deisgn */
+.left-about-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.right-about-section{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.person-img{
+    width: 20rem;
+    filter: drop-shadow(5px 5px 5px black);
+}
+/* 404 page design */
+.error-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80vw;
+}
+.error-section img{
+    width: 50vw;
+}
+.error-section p{
+    margin: 20px;
+}
+/* weather page design */
+.main_weather{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.form-design{
+    display: flex;
+}
+#city-name{
+    background-color: var(--main-bg);
+    color: white;
+    width: 40vw;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+#submitBtn{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid var(--main-bg);
+    border-radius: 30px;
+    outline: none;
+    margin: 0px 5px;
+}
+#submitBtn:hover{
+    background-color: #fff;
+    color: var(--main-color);
+    cursor: pointer;
+}
+::placeholder{
+    color: white;
+}
+.container{
+    background-color: var(--main-bg);
+    color: white;
+    min-width: 40vw;
+    min-height: 30vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+#date{
+    font-size: 1rem;
+    background-color: #2b3239;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 20px 0px;
+}
+#message{
+    font-size: 1.5rem;
+}
+#weather{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+.weather-img{
+    width: 200px;
+}
+/* footer design */
+footer{
+    background-color: var(--main-bg);
+    text-align: center;
+    color: #fff;
+    margin-top: auto;
+    height: 10vh;
+    width: 100%;
+}
+footer p{
+    padding: 20px;
+}
